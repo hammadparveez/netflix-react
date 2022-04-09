@@ -1,0 +1,34 @@
+header {
+    margin: 0 3.5rem;
+    height: 4rem;
+    padding-top: 20px;
+    overflow: hidden;
+}
+header > img {
+    height: 125px;
+    width: 110px;
+    margin-top: -47px;
+}
+
+header > a {
+    background: #ff0000;
+    color: #fff;
+    padding: 7px 19px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+/* Banner Section Styling */
+section.banner {
+    padding: 140px 45px 70px;
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}   
+section.banner > h1 {font-size: 3.125rem;}
+section.banner >h4 {
+    font-size: 1.625rem;
+    margin: 1rem auto;
+}
+section.banner >  p {padding-top: 0.85rem;}
