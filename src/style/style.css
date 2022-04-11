@@ -60,9 +60,9 @@ section.banner > .overlay-backgroud {
     max-width: 30%;
     min-width: 300px;
     padding: 0px 10px 0px 10px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     background-color: #ffffff;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
     transition: all 150ms ease-out;
   }
@@ -81,13 +81,14 @@ section.banner > .overlay-backgroud {
     color: #999;
     background-color: transparent;
     z-index: 10;
-    transition: transform 150ms ease-out, font-size 150ms ease-out;
+    transition: transform 150ms linear, font-size 150ms ease-out;
   }
   
   .focused .form-label {
     /* transform: translateY(-125%); */
     top:3px;
     font-size: 0.75em;
+    font-weight: bolder;
   }
   
   .form-input {
@@ -103,9 +104,19 @@ section.banner > .overlay-backgroud {
   .form-input.filled {
     box-shadow: 0 2px 0 0 lightgreen;
   }
-  .form-wrapper:focus-within {
-  
-    border-bottom: 1px solid #d30303;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  .form-wrapper + button {
+    border: none;
+    padding: .35rem 1rem;
+    background: #ea412c;
+    color: #fff;
+    font-size: 1rem;
+}
+.get-started-text {
+  padding: .35rem 0;
+  display: inline-block;
+}
+.arrow-icon {
+  margin-left: 5px;
+  font-size: 1rem;
+
 }
